@@ -46,12 +46,13 @@ col_pins = ["PIN_1", "PIN_26", "PIN_22", "PIN_21", "PIN_23", "PIN_20"]
 
 [[split.central.input_device.pmw3610]]
 name = "trackball0"
-spi = { instance = "bitbang0", sck = "PIN_2", mosi = "PIN_3", miso = "PIN_3", cs = "PIN_6" }
-motion = "PIN_0"
+spi = { instance = "bitbang0", sck = "PIN_2", mosi = "PIN_0", miso = "PIN_0", cs = "PIN_6" }
+motion = "PIN_3"
 force_awake = false
 smart_mode = true
 cpi = 800
 invert_x = true
+invert_y = true
 
 [[split.peripheral]]
 rows = 5
@@ -66,8 +67,8 @@ col_pins = ["PIN_1", "PIN_26", "PIN_22", "PIN_21", "PIN_23", "PIN_20"]
 
 [[split.peripheral.input_device.pmw3610]]
 name = "trackball1"
-spi = { instance = "bitbang0", sck = "PIN_2", mosi = "PIN_3", miso = "PIN_3", cs = "PIN_6" }
-motion = "PIN_0"
+spi = { instance = "bitbang0", sck = "PIN_2", mosi = "PIN_0", miso = "PIN_0", cs = "PIN_6" }
+motion = "PIN_3"
 force_awake = false
 smart_mode = true
 cpi = 800
