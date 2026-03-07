@@ -31,6 +31,9 @@ defmt = "1.0"
 defmt-rtt = "1.0"
 panic-probe = { version = "1.0", features = ["print-defmt"] }
 static_cell = "2"
+usbd-hid = "0.9"
+embedded-hal = "1.0"
+embedded-hal-async = "1.0"
 
 [build-dependencies]
 xz2 = "0.1.7"

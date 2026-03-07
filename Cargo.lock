@@ -15,11 +15,14 @@ dependencies = [
  "embassy-futures",
  "embassy-rp",
  "embassy-time",
+ "embedded-hal 1.0.0",
+ "embedded-hal-async",
  "json",
  "panic-probe",
  "portable-atomic",
  "rmk",
  "static_cell",
+ "usbd-hid 0.9.0",
  "xz2",
 ]
 

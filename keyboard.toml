@@ -44,35 +44,16 @@ matrix_type = "normal"
 row_pins = ["PIN_5", "PIN_27", "PIN_28", "PIN_29", "PIN_7"]
 col_pins = ["PIN_1", "PIN_26", "PIN_22", "PIN_21", "PIN_23", "PIN_20"]
 
-[[split.central.input_device.pmw3610]]
-name = "trackball0"
-spi = { instance = "bitbang0", sck = "PIN_2", mosi = "PIN_0", miso = "PIN_0", cs = "PIN_6" }
-motion = "PIN_3"
-force_awake = false
-smart_mode = true
-cpi = 800
-invert_x = true
-invert_y = true
-
 [[split.peripheral]]
 rows = 5
 cols = 6
-row_offset = 5
+row_offset = 0
 col_offset = 6
 serial = [{ instance = "PIO0", tx_pin = "PIN_4", rx_pin = "PIN_4" }]
 [split.peripheral.matrix]
 matrix_type = "normal"
 row_pins = ["PIN_5", "PIN_27", "PIN_28", "PIN_29", "PIN_7"]
 col_pins = ["PIN_1", "PIN_26", "PIN_22", "PIN_21", "PIN_23", "PIN_20"]
-
-[[split.peripheral.input_device.pmw3610]]
-name = "trackball1"
-spi = { instance = "bitbang0", sck = "PIN_2", mosi = "PIN_0", miso = "PIN_0", cs = "PIN_6" }
-motion = "PIN_3"
-force_awake = false
-smart_mode = true
-cpi = 800
-invert_x = true
 
 [rmk]
 split_peripherals_num = 1
